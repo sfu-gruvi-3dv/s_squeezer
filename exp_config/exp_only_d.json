@@ -1,0 +1,38 @@
+{
+    "docker": {
+      "hostname": "docker",
+      "debug": false,
+      "debug_output_dir": "/tmp/squeezer/dbg",
+      "dev_id": [
+        0,
+        0
+      ],
+      "max_epochs": 25,
+      "loader_batch_size": 1,
+      "loader_valid_batch_size": 1,
+      "loader_shuffle": true,
+      "loader_num_threads": 4,
+      "start_learning_rate": 2e-4,
+      "verbose": true,
+      "valid_per_batches": 10,
+      "valid_max_batch_num": 10,
+      "checkpoint_per_iterations": 1000,
+      "visualize_per_iterations": 100,
+      "description": "dbg",
+      "name_tag": "stg1_binarized_loss",
+      "log_dir": "/mnt/Exp/logs",
+      "log_create_exp_folder":true,
+      "log_continue_dir": "",
+      "log_continue_step": 0,
+      "ckpt_path_dict": {
+        "instance": ""
+      },
+      "additional_cfg": {
+        "stage": "only_d",
+        "comet_api": "Xi9R7jTt9bkRAUdcFJIIOcxyV",
+        "comet_project": "loc-squeezer",
+        "enable_seg": true,
+        "qp_solver": "cvxpy"
+      }
+    }
+}

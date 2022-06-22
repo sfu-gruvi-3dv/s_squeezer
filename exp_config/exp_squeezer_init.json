@@ -1,0 +1,44 @@
+{
+    "docker": {
+      "hostname": "docker",
+      "debug": false,
+      "debug_output_dir": "/tmp/squeezer/dbg",
+      "dev_id": [
+        0,
+        1
+      ],
+      "max_epochs": 25,
+      "loader_batch_size": 1,
+      "loader_valid_batch_size": 1,
+      "loader_shuffle": true,
+      "loader_num_threads": 4,
+      "start_learning_rate": 5e-4,
+      "verbose": true,
+      "valid_per_batches": 10,
+      "valid_max_batch_num": 2,
+      "checkpoint_per_iterations": 1000,
+      "visualize_per_iterations": 100,
+      "description": "dbg",
+      "name_tag": "stg1_binarized_loss",
+      "log_dir": "/mnt/Exp/logs",
+      "log_create_exp_folder":true,
+      "log_continue_dir": "",
+      "log_continue_step": 0,
+      "ckpt_path_dict": {
+        "instance": ""
+      },
+      "additional_cfg": {
+        "stage": "d_K",
+        "comet_api": "Xi9R7jTt9bkRAUdcFJIIOcxyV",
+        "comet_project": "loc-squeezer",
+        "enable_seg": true,
+        "pnp_loss_samples": 64,
+        "pnp_samples_qp_match": 1,
+        "qp_sel_random": false,
+        "qp_num_pts": 700,
+        "qp_distinctiveness_weight": -2.30258,
+        "qp_compression_ratio": 0.15,
+        "qp_solver_max_iters": 1500
+      }
+    }
+}
